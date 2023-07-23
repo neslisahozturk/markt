@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>markt</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="icon" type="icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="script.js" defer></script>
+<link rel='stylesheet' href='https://codepen.io/P1N2O/pen/xxbjYqx.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+<div class="box" >
+</div>
+<style>
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    outline: none;
+  }
+  body {
+	  overflow-x: hidden;
+  }
+  
+  .wrapper{
+    position: relative;
+    align-items: center;
+  }
+  header{
+    display: inline-block;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 99%;
+  }
+  div .logo{
+    display: grid;
+    place-items: center;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo">
+        <img class="logologo" src="marktLogo.png">
+      </div>
+    </header>
+  </div>
+    <!--SLIDER-WRAP-->
+    <div class="slider-wrap">
+      <div class="slider">
+        <div class="item">
+          <div class="caption1">
+            <h1>Environment</h1>
+            <div id="env-id" class="environmentitems"></div>
+            <div class="environmentbuttons">
+              <button id="env-btn" class="environmentrefresh"><i class="fas fa-refresh"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="caption2">
+            <h1>Character</h1>
+            <div id="chr-id" class="characteritems"></div>
+            <div class="characterbuttons">
+              <button id="chr-btn" class="characterrefresh"><i class="fas fa-refresh"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="caption3">
+            <h1>Situation</h1>
+            <div id="stn-id" class="situationitems"></div>
+            <div class="situationbuttons">
+              <button id="stn-btn" class="situationrefresh"><i class="fas fa-refresh"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="caption4">
+            <h1>Primary Color</h1>
+            <div class="colorbuttons">
+            <ul class="color-container"></ul>
+            <button class="refresh-btn"><i class="fas fa-refresh"></i></button>
+          </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="caption5">
+            <h1>Medium/Style</h1>
+            <div id="mdm-id" class="mediumitems"></div>
+            <div class="mediumbuttons">
+              <button id="mdm-btn" class="mediumrefresh"><i class="fas fa-refresh"></i></button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="slide-overlay">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script>
+        $('.slider').slick({
+          dots:true,
+          horizontal:true,
+        });
+      </script>
+    </div>
+  </div>
+</body>
+</head>
+</html>
